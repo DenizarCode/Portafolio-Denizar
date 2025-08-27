@@ -1,3 +1,304 @@
+body{
+    margin: 0px;
+    background-color: #02530e; 
+    color: #fff;
+
+}
+
+
+
+/*
+
+
+.objets{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    padding: 1px;
+    margin: 1px;
+    top: 1px;
+
+
+}
+
+.objets_cuadro {
+
+    opacity: 50%;
+    animation-name: llenar-barrita2;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline:scroll();
+
+
+}
+
+
+@keyframes llenar-barrita2 {
+    from{
+      transform: translate(1px, 1px);
+
+    }
+    to{
+     
+        transform: translate(300px, 440px) rotate(900deg);;
+        background-color: #000;
+  
+
+    }
+}
+
+*/
+
+
+
+
+
+
+.navcitoADA{
+   
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:  8px 100px 8px 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 7px 5px 15px rgb(0, 10, 6) ;
+    z-index: 50;
+  
+}
+
+
+
+
+.nav__ul{
+    
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+
+}
+
+
+
+.nav__item{
+    list-style: none;
+
+}
+
+
+.nav__logo-container{
+    
+    margin: 0px 100% ;
+    text-align: center;
+    font-family: "chiller";
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 5px;
+   
+
+}
+
+
+
+.nav__ul-container, .nav__logo-container{
+    flex-grow: 1;
+    text-align: center;
+
+
+}
+
+
+
+
+.nav__link{
+
+    color: #02530ef0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 0;
+    transition: background-color 0.5s, border-radius 0.25s,  outline 0.4s, outline-offset 0.4s;
+    outline: 0;
+    outline-offset: 0;
+
+
+}
+
+.nav__link:hover{
+    background-color:#02530e43;
+    border-radius: 20px;
+    outline: 2px solid #02530e7c;
+    outline-offset: -7px;
+
+ 
+}
+
+.link--Home{
+    background-color:#02530ec5 ;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 6px;
+
+
+}
+
+
+.link--login:hover{
+    background-color:#057616a1 ;
+    outline: navajowhite;
+
+}
+
+.nav__logo{
+
+    width: 80px;
+
+}
+
+
+.main-sectionNav{
+    color: #ffffff;
+    background-color: rgb(4, 91, 43);
+
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 100px;
+
+
+
+}
+
+
+/* CAMBIANDO H1*/
+
+
+h1{
+    text-align: center;
+    
+
+}
+
+h1 + p {
+    text-align: center;
+    font-style: italic;
+
+}
+
+
+/*ABOUT ME*/
+
+#about-me{
+
+    margin: 20px;
+
+
+}
+
+
+/*Proximamente */
+
+
+#Proximo{
+    color: #ffffff;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+    
+
+
+}
+
+
+.separador{
+
+    width: 310%;
+    height: 40px;
+
+    background-color: #ffb300;
+    background:repeating-linear-gradient( to right, #ffb300 0px, #ffb300 100px, black 0px, black 200px) ;
+    transform: skewX(-30deg)  translate(-10px);
+    z-index: -50;
+    
+    animation-name: separator-movement;
+    animation-duration: 45s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+   
+}
+
+
+
+
+#mensaje{
+    font-size: 35px;
+    text-align: center;
+    
+    position: relative;
+
+
+}
+
+
+
+#mensaje::before{
+    content: '';
+    width: 25px;
+    height: 100%;
+    background-color: #02530e ;
+    position: absolute;
+    right: 0;
+    border-radius: 4px ;
+    animation: titilar 5s reverse infinite  steps(4);
+
+}
+
+@keyframes titilar {
+
+    from{
+        width: 0;
+
+
+    }
+    to{
+
+    width: 15%;
+    
+    }
+
+    
+}
+
+
+
+
+
+@keyframes separator-movement {
+    from{
+  
+      
+    }
+    to{
+        transform: skewX(-30deg) translate(-210px) ;
+     
+    
+    }
+}
 
 
 
@@ -5,6 +306,23 @@
 
 
 
+
+
+
+
+
+
+
+#Contact{
+
+width: 100%;
+height: 100px;
+background-color: #000;
+    position: fixed;
+    bottom: 0;
+  
+
+}
 
 
 
