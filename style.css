@@ -1,7 +1,23 @@
 body{
     margin: 0px;
-    background-color: #02530e; 
+    background-color: #d1ead5; 
     color: #fff;
+    /*overflow-x: hidden;*/
+    text-align:justify;
+
+
+}
+
+
+#envoltura{
+
+background-color: #02530e; 
+height: 100%;
+
+margin: 0px 30px 0 30px;
+padding: 20px;
+position: relative;
+
 
 }
 
@@ -61,14 +77,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding:  8px 100px 8px 40px;
+    padding:  8px 0px 0px 0px;
     text-align: center;
     position: sticky;
     top: 0;
-    margin-bottom: 10px;
     box-shadow: 7px 5px 15px rgb(0, 10, 6) ;
     z-index: 50;
-  
+
 }
 
 
@@ -92,7 +107,7 @@ body{
 
 }
 
-
+/*
 .nav__logo-container{
     
     margin: 0px 100% ;
@@ -100,10 +115,78 @@ body{
     font-family: "chiller";
     font-size: 20px;
     color: #000;
-    letter-spacing: 5px;
-   
+    letter-spacing: 10px;
+    
 
 }
+*/
+
+
+
+
+
+
+
+
+
+
+.contenedor_logo{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    opacity: 100%;
+    padding: 0;
+    margin: 0;
+    
+
+    
+}
+
+
+.nav__logo-container{
+    display: flex;
+    justify-content: center;
+   
+    background-color: #ffffff;
+    box-shadow: 7px 20px 15px rgba(0, 10, 6, 0.559) ;
+
+  
+    text-align: center;
+    font-family: "chiller";
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 10px;
+    top: 46px;
+  
+    position: sticky; 
+  
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,6 +210,7 @@ body{
     transition: background-color 0.5s, border-radius 0.25s,  outline 0.4s, outline-offset 0.4s;
     outline: 0;
     outline-offset: 0;
+    
 
 
 }
@@ -157,11 +241,6 @@ body{
 
 }
 
-.nav__logo{
-
-    width: 80px;
-
-}
 
 
 .main-sectionNav{
@@ -173,8 +252,6 @@ body{
     font-size: 20px;
     margin-top: 100px;
 
-
-
 }
 
 
@@ -183,7 +260,7 @@ body{
 
 h1{
     text-align: center;
-    
+    padding-top: 65px ;
 
 }
 
@@ -209,38 +286,43 @@ h1 + p {
 
 #Proximo{
     color: #ffffff;
-    overflow-x: hidden;
+
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
- 
-    
+    align-items: center;  
 
 
 }
 
 
-.separador{
+.separador {
 
-    width: 310%;
+    width: 200%;
     height: 40px;
 
     background-color: #ffb300;
     background:repeating-linear-gradient( to right, #ffb300 0px, #ffb300 100px, black 0px, black 200px) ;
     transform: skewX(-30deg)  translate(-10px);
-    z-index: -50;
+  
     
     animation-name: separator-movement;
-    animation-duration: 45s;
+    animation-duration: 10s;
     animation-delay: 0s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
+    box-shadow: 1px 10px 15px rgb(0, 10, 6) ;
+  
+
+
+
     
    
 }
+
+
 
 
 
@@ -259,14 +341,14 @@ h1 + p {
 #mensaje::before{
     content: '';
     width: 25px;
-    height: 100%;
+    height: 10px;
     background-color: #02530e ;
     position: absolute;
     right: 0;
     border-radius: 4px ;
     animation: titilar 5s reverse infinite  steps(4);
-
-}
+    bottom: 5px;
+}   
 
 @keyframes titilar {
 
@@ -294,7 +376,7 @@ h1 + p {
       
     }
     to{
-        transform: skewX(-30deg) translate(-210px) ;
+        transform: skewX(-30deg) translate(-60px) ;
      
     
     }
@@ -304,6 +386,19 @@ h1 + p {
 
 
 
+/*Skills*/
+
+#skills{
+    
+
+ 
+    
+    background-color: rgb(38, 125, 102);
+   
+    background-image: url(https://static.vecteezy.com/system/resources/previews/016/586/178/non_2x/abstract-technological-background-with-various-technological-elements-structure-pattern-technology-png.png) ;
+
+
+}
 
 
 
@@ -311,14 +406,107 @@ h1 + p {
 
 
 
+.cajita{
+    max-height: 140px;
+    width: 100%;
 
+
+    overflow: hidden;
+
+  
+    display: flex;
+  
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-evenly; 
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #000;
+    text-align: center;
+    
+ 
+}
+
+
+
+
+.Skill{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 60px;
+    min-height:60px;
+    max-width: 60px;
+    min-height: 60px;
+
+    margin: 10px 10px 10px 0;
+    background-color: #cdf0d9;  
+
+    animation-delay: 0s;
+    animation-fill-mode: both ;
+
+  
+
+    animation:  skills-movements  5s  infinite  ;
+
+    animation-direction: alternate; 
+    animation-timing-function: linear;
+
+}
+
+
+
+.C, .skill_Cs, .skill_C{
+
+  background-color: #7dd49a;
+    color: #000;
+}
+
+
+
+
+
+@keyframes skills-movements {
+    0%{
+      
+         
+    }
+    50%{
+           transform:  translate(0) ;
+
+       
+
+    }
+    100%{
+        transform:  translate(-575px) rotate(60deg);
+
+     
+    
+    }
+}
+
+
+
+
+.java:hover{
+
+
+
+}
+
+
+
+/*Contact*/
 
 #Contact{
 
-width: 100%;
-height: 100px;
-background-color: #000;
-    position: fixed;
+    width: 100%;
+    
+    background-color: #000;
+ 
     bottom: 0;
   
 
@@ -333,3 +521,107 @@ background-color: #000;
 
 
 
+
+
+
+.contact_footer{
+   
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:  8px 100px 8px 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 7px 5px 15px rgb(0, 10, 6) ;
+    z-index: 50;
+  
+}
+
+
+
+
+.contact_ul{
+    
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+
+}
+
+
+
+.nav_item{
+    list-style: none;
+    padding: 10px;
+     
+
+}
+
+
+
+.logo_footer{
+
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    color: #000;
+    
+    font-family: "chiller";
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+
+}
+
+
+
+.nav_link{
+
+    color: #fffffff0;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+
+    
+}
+
+
+
+
+
+.nav_link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width .7s ease;
+
+
+
+
+}
+
+
+.icon-img{
+  width: 32px;
+  height: 32px;
+
+
+}
+
+
+.nav_link:hover::after {
+  width: 100%;
+
+
+}
