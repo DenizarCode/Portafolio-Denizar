@@ -1,9 +1,18 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal */
+
+  
+}
+
+
 body{
     margin: 0px;
     background-color: #d1ead5; 
     color: #fff;
     /*overflow-x: hidden;*/
     text-align:justify;
+    font-family: 'Roboto', sans-serif;
 
 
 }
@@ -11,12 +20,14 @@ body{
 
 #envoltura{
 
-background-color: #02530e; 
-height: 100%;
+    
+    background-color: #02530e; 
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
 
-margin: 0px 30px 0 30px;
-padding: 20px;
-position: relative;
+
+
 
 
 }
@@ -389,19 +400,39 @@ h1 + p {
 /*Skills*/
 
 #skills{
-    
 
- 
-    
-    background-color: rgb(38, 125, 102);
    
-    background-image: url(https://static.vecteezy.com/system/resources/previews/016/586/178/non_2x/abstract-technological-background-with-various-technological-elements-structure-pattern-technology-png.png) ;
 
+    width: 110%; /* 100% del viewport */
+    margin-left: -30px; /* compensa el margen de #envoltura */
+
+    padding: 20px;
+    background-color: #f4f2f2;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  
+
+    
 
 }
 
 
+.cajitaSkills{
 
+  background-color: #ffffff;
+  color: #02530e;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* se adapta pero no crece más de esto */
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; /* asegura que el padding no rompa el ancho */
+
+
+
+
+}
 
 
 
@@ -491,11 +522,83 @@ h1 + p {
 
 
 
-.java:hover{
+
+
+/*Logros*/
+
+
+#logros{
+    width: 110%; /* 100% del viewport */
+    margin-left: -30px; /* compensa el margen de #envoltura */
+   
+    padding: 20px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    
+ 
+
+
+}
+
+.zona-galeria {
+
+    width: 85%;
+    display: grid;
+    background-color: rgb(0, 0, 0);
+
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-template-rows: repeat(3, 100px); 
+    grid-auto-rows: 150px; 
+    grid-auto-flow: row;  
+    grid-auto-columns: 1fr; 
+   
+    margin-top: 30px;
+  
+
+    
+}
+
+.pieza img {
+    background-color: rgba(255, 255, 255, 0.217);
+    padding: 10px;
+    font-size: 30px;
+    width: 350px;
+    height: 150px;
+    border-radius: 20%;
+    box-shadow: 0 0 30px #ffffff75;
 
 
 
 }
+
+.pieza:hover{
+    z-index: 10;
+    transform: scale(1.6) ;
+
+
+}
+
+
+
+
+.pieza:active{
+    z-index: 10;
+ 
+  
+  animation: rotate-scale-up-ver 0.85s linear 0s 1 normal both;
+   
+
+
+}
+
+
+
+@keyframes rotate-scale-up-ver {0%  { transform: scale(1) rotateY(0); } 50% { transform: scale(2) rotateY(180deg); } 100% { transform: scale(1) rotateY(360deg);} }
+
+
+
+
 
 
 
