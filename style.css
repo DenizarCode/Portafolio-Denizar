@@ -1,15 +1,22 @@
-html, body {
-  width: 100%;
-  overflow-x: hidden; /* evita scroll horizontal */
+html {
+width: 100%;
+/*overflow-x: hidden;*/
 
-  
 }
 
+#home{
+
+    position: absolute;
+
+
+}
 
 body{
+    width: 100%;
     margin: 0px;
-    background-color: #d1ead5; 
-    color: #fff;
+    background:  linear-gradient(rgb(200, 251, 220), rgb(255, 255, 255)); 
+    
+    color: #000000;
     /*overflow-x: hidden;*/
     text-align:justify;
     font-family: 'Roboto', sans-serif;
@@ -17,6 +24,8 @@ body{
 
 }
 
+
+/*
 
 #envoltura{
 
@@ -33,7 +42,7 @@ body{
 }
 
 
-
+*/
 /*
 
 
@@ -91,7 +100,7 @@ body{
     padding:  8px 0px 0px 0px;
     text-align: center;
     position: sticky;
-    top: 0;
+    top: 0px;
     box-shadow: 7px 5px 15px rgb(0, 10, 6) ;
     z-index: 50;
 
@@ -270,23 +279,67 @@ body{
 
 
 h1{
-    text-align: center;
+    text-align: left;
     padding-top: 65px ;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-bottom: 0;
 
 }
 
 h1 + p {
-    text-align: center;
+    text-align: left;
     font-style: italic;
+    margin-left: 50px;
+    
+
+  
 
 }
 
 
 /*ABOUT ME*/
 
-#about-me{
+#about_me{
 
-    margin: 20px;
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -30px; 
+
+    color: #fff;
+
+
+}
+
+
+.contenedorAbout{
+
+    background-color: rgba(0, 0, 0, 0.445);
+
+
+}
+
+
+.contenedorAbout h2{
+    opacity: 0;
+    
+}
+
+.contenedorAbout p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-align: left;
+
+    padding: 100px 100px;
+
+    width: 50%;
+
+
+
 
 
 }
@@ -528,47 +581,42 @@ h1 + p {
 
 
 #logros{
-    width: 110%; /* 100% del viewport */
-    margin-left: -30px; /* compensa el margen de #envoltura */
+    width: 100%;
+    margin-left: -30px; 
    
-    padding: 20px;
+    padding:0px 20px;
     background-color: #000000;
     color: rgb(0, 0, 0);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    
- 
+
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_1280.jpg);
+
 
 
 }
 
 .zona-galeria {
 
-    width: 85%;
-    display: grid;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap; 
+    width: 100%;
+    padding: 300px 50px;
 
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    grid-template-rows: repeat(3, 100px); 
-    grid-auto-rows: 150px; 
-    grid-auto-flow: row;  
-    grid-auto-columns: 1fr; 
+    background-color: #00000082;
+    justify-content:space-evenly; 
    
-    margin-top: 30px;
-  
-
-    
 }
 
 .pieza img {
-    background-color: rgba(255, 255, 255, 0.217);
-    padding: 10px;
-    font-size: 30px;
-    width: 350px;
-    height: 150px;
+    
+    height:150px ;
+    width: 250px;
+    background-color: rgb(34, 170, 68);
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
     border-radius: 20%;
-    box-shadow: 0 0 30px #ffffff75;
-
-
+    box-shadow: 0 0 20px rgba(255, 253, 253, 0.564);
 
 }
 
