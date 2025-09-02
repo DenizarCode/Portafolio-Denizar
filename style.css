@@ -281,22 +281,93 @@ body{
 h1{
     text-align: left;
     padding-top: 65px ;
-    font-size: 50px;
+    font-size: 70px;
     margin-left: 50px;
     margin-bottom: 0;
 
+   
+    max-width: 22%;
+
+   
+ 
+    background-image: linear-gradient(to right, black 0%, white 50% );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
+@media (max-width: 1080px) {
+  h1 {
+  max-width: 75%;
+
+  }
+}
+
+
+
+
 h1 + p {
+
+
+  
     text-align: left;
     font-style: italic;
+
     margin-left: 50px;
+    color: white;
     
 
   
 
 }
 
+
+
+
+/*Encabezado */
+
+.nombre{
+
+
+
+    background-color: #000000;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 10px ), repeating-linear-gradient( #166829, #000100 );
+
+    position: relative;
+    padding: 10px 0 200px 0;
+
+
+}
+
+
+
+.nombre p {
+    position: absolute;
+    top: 50%;     
+    left: 50%;    
+    color: #ffffff;
+    width: 50%;
+    
+
+    
+}
+
+
+
+@media (max-width: 1080px) {
+ .nombre p  {
+
+    position: relative;
+  
+
+    left: 10%;   
+    padding-bottom: 40px;
+    text-align: center;
+
+
+  }
+}
 
 /*ABOUT ME*/
 
@@ -316,7 +387,7 @@ h1 + p {
 
 .contenedorAbout{
 
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.71);
 
 
 }
@@ -324,7 +395,8 @@ h1 + p {
 
 .contenedorAbout h2{
     opacity: 0;
-    
+    margin-top: 0;
+
 }
 
 .contenedorAbout p{
@@ -338,18 +410,44 @@ h1 + p {
 
     width: 50%;
 
-
-
-
+    color: rgba(255, 255, 255, 0.489);
+    
+  
+    transition: transform .8s,    text-align 5s,    text-shadow 1s,  color 1.5s;
 
 }
+
+
+
+.contenedorAbout p:hover{
+
+    transform: translate(100px);
+
+    
+    animation: holis 2s  infinite alternate-reverse backwards;
+
+
+
+    color: white;
+    text-shadow: 0 0 15px  rgba(0, 255, 64, 0.701);
+
+
+     
+
+}
+
+
+
+
+
+
 
 
 /*Proximamente */
 
 
 #Proximo{
-    color: #ffffff;
+    color: #000000;
 
 
     display: flex;
@@ -406,7 +504,7 @@ h1 + p {
     content: '';
     width: 25px;
     height: 10px;
-    background-color: #02530e ;
+    background-color: rgb(224, 249, 234) ;
     position: absolute;
     right: 0;
     border-radius: 4px ;
@@ -423,7 +521,7 @@ h1 + p {
     }
     to{
 
-    width: 15%;
+    width: 16.7%;
     
     }
 
@@ -460,11 +558,12 @@ h1 + p {
     margin-left: -30px; /* compensa el margen de #envoltura */
 
     padding: 20px;
-    background-color: #f4f2f2;
+    background:  linear-gradient(rgb(27, 83, 49), rgb(0, 0, 0)); 
+
     color: rgb(0, 0, 0);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
   
-
+    margin-top: 100px;
     
 
 }
@@ -474,8 +573,9 @@ h1 + p {
 
   background-color: #ffffff;
   color: #02530e;
-  padding: 20px;
+  padding: 10px 50px;
   width: 100%;
+  max-height: 500px;
   max-width: 500px; /* se adapta pero no crece más de esto */
   margin: 40px auto;
   border-radius: 10px;
@@ -488,13 +588,30 @@ h1 + p {
 }
 
 
+#skills h2{
 
+
+    color: #00000000;
+
+
+}
+
+
+.cajitaSkills h3{
+
+    font-size: 40px;
+    text-align: start;
+
+
+
+}
 
 .cajita{
     max-height: 140px;
     width: 100%;
 
 
+    padding: 30px 0 100px 0;
     overflow: hidden;
 
   
@@ -503,11 +620,13 @@ h1 + p {
     flex-flow: row wrap;
     align-items: center;
     justify-content:space-evenly; 
+
     position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
     color: #000;
     text-align: center;
+    
     
  
 }
