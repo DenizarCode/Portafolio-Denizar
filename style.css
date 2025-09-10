@@ -1,12 +1,28 @@
+/* Variables*/
+
+:root {
+  --primary-color: #fff;
+
+}
+
+/* - - - - Fin variables - - - - */ 
+
 html {
 width: 100%;
 /*overflow-x: hidden;*/
+  scrollbar-color: #4CAF50 #383838; /* thumb (verde) y track (gris claro) */
+   
 
 }
 
 #home{
 
     position: absolute;
+    color: transparent;
+    background-color: #fff;
+    width: 100%;
+   
+
 
 
 }
@@ -21,7 +37,7 @@ body{
     text-align:justify;
     font-family: 'Roboto', sans-serif;
 
-
+scrollbar-color: red;
 }
 
 
@@ -93,7 +109,7 @@ body{
 
 .navcitoADA{
    
-    background-color: #fff;
+    background-color:var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -101,10 +117,12 @@ body{
     text-align: center;
     position: sticky;
     top: 0px;
-    box-shadow: 7px 5px 15px rgb(0, 10, 6) ;
+    box-shadow: 7px 5px 20px rgba(0, 255, 153, 0.897) ;
     z-index: 50;
-
+    overflow: hidden; 
 }
+
+
 
 
 
@@ -151,7 +169,7 @@ body{
 
 
 .contenedor_logo{
-    height: 200px;
+    height:140px;
     width: 100%;
     position: absolute;
     z-index: 50;
@@ -168,8 +186,8 @@ body{
     display: flex;
     justify-content: center;
    
-    background-color: #ffffff;
-    box-shadow: 7px 20px 15px rgba(0, 10, 6, 0.559) ;
+    background-color: var(--primary-color);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.651) ;
 
   
     text-align: center;
@@ -231,6 +249,7 @@ body{
     outline: 0;
     outline-offset: 0;
     
+    
 
 
 }
@@ -243,6 +262,72 @@ body{
 
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav__link::before{
+
+    content: ''; 
+    background-color: rgb(205, 233, 200);
+    display: block;
+    height: 200%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    transition: top 1s, left 1.5s ;
+    border-radius: 100%;
+    top: 100%;
+    left: 30%;
+    
+  
+}
+
+
+
+.nav__link:hover::before{
+    top: -35%;
+    left: -30%;
+       
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .link--Home{
     background-color:#02530ec5 ;
@@ -281,18 +366,20 @@ body{
 h1{
     text-align: left;
     padding-top: 65px ;
-    font-size: 70px;
+    font-size: 55px;
     margin-left: 50px;
     margin-bottom: 0;
 
    
-    max-width: 22%;
+    max-width: 40%;
 
    
  
     background-image: linear-gradient(to right, black 0%, white 50% );
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+   
 
 }
 
@@ -306,21 +393,6 @@ h1{
 
 
 
-h1 + p {
-
-
-  
-    text-align: left;
-    font-style: italic;
-
-    margin-left: 50px;
-    color: white;
-    
-
-  
-
-}
-
 
 
 
@@ -332,119 +404,216 @@ h1 + p {
 
     background-color: #000000;
     opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 10px ), repeating-linear-gradient( #166829, #000100 );
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000cc 10px ), repeating-linear-gradient( #197e4d, #0a0a0a );
 
     position: relative;
-    padding: 10px 0 200px 0;
+    padding: 20px 0 10px 0;
 
+   
 
 }
 
 
 
-.nombre p {
+
+
+.clase {
+
+    text-align: left;
+    font-style: italic;
+
+    margin-left: 50px;
+    color: white;
+    
+    
     position: absolute;
     top: 50%;     
     left: 50%;    
-    color: #ffffff;
     width: 50%;
-    
+  
+    font-size: 18px;
+
+   
 
     
 }
+
+
+
+
+.Disponibilidad{
+    position: relative;
+
+    margin-left: 60px;
+    border: 1.5px solid rgb(130, 254, 150);
+    
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+
+    display: inline-block;
+
+    background-color: #000000ba;
+    animation: pulsacion 2s infinite alternate ;
+
+
+}
+
+.boton-descarga{
+
+  
+    color: white;
+    text-decoration: none;
+    transition:  text-decoration 1s;
+    display: inline-block;
+    padding: 7px 15px;
+    margin-left: 62px;
+    margin-top: 10px;
+ 
+     
+  
+}
+
+.boton-descarga:hover{
+
+
+    color: rgb(111, 182, 100);
+  
+
+}
+
+
+.skillsEncabezado{
+    background-color: rgba(3, 156, 24, 0.269);
+
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+    font-size: 30px;
+    text-align: center; 
+    margin-top: 100px;
+ 
+
+
+
+}
+
+.ski{
+display: inline-block;
+font-size: 23px;
+
+}
+
+
+.IconSkill{
+width: 50px;
+height: 50px;
+display: inline-block;
+padding: 20px 10px;
+
+
+}
+
+@keyframes pulsacion {
+    0%{
+    color: #00ff11;
+
+
+    }
+    50%{
+        color: #00ff1100;
+        border: 1.5px solid rgba(130, 254, 151, 0);
+        box-shadow: 0 0 10px #00ff1100;
+        background-color: #00000000;
+
+    }
+    80%{
+
+        color: #00ff11;
+        border: 1.5px solid rgb(130, 254, 150);
+        box-shadow: 0 0 10px #00ff11;
+    }
+    100%{
+
+        color: #015e07;
+        border: 1.5px solid rgb(60, 118, 69);
+        box-shadow: 0 0 10px #00ff1137;
+
+    }
+ 
+
+}
+
+
+
 
 
 
 @media (max-width: 1080px) {
- .nombre p  {
+ .clase {
 
-    position: relative;
-  
-
+    margin-top: 190px;
     left: 10%;   
     padding-bottom: 40px;
     text-align: center;
 
-
   }
 }
 
-/*ABOUT ME*/
 
-#about_me{
-
-    background-image: url(https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: -30px; 
-
-    color: #fff;
+/*Projects */
 
 
-}
 
 
-.contenedorAbout{
+.ContenedorP{
+    margin: 100px ;
+   
+    display: flex;
+    flex-flow: row wrap;
 
-    background-color: rgba(0, 0, 0, 0.71);
+    border: 2px solid red;
+    justify-content: center;
+    gap: 25px;
 
-
-}
-
-
-.contenedorAbout h2{
-    opacity: 0;
-    margin-top: 0;
-
-}
-
-.contenedorAbout p{
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-align: left;
-
-    padding: 100px 100px;
-
-    width: 50%;
-
-    color: rgba(255, 255, 255, 0.489);
-    
   
-    transition: transform .8s,    text-align 5s,    text-shadow 1s,  color 1.5s;
+
+
 
 }
 
 
+.project{
+    width: 300px;
+    height: 300px;
+    min-width: 100px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-content:end;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: transform .5s;
 
-.contenedorAbout p:hover{
-
-    transform: translate(100px);
-
-    
-    animation: holis 2s  infinite alternate-reverse backwards;
-
-
-
-    color: white;
-    text-shadow: 0 0 15px  rgba(0, 255, 64, 0.701);
-
-
-     
 
 }
 
+.project:hover{
+    transform: scale(1.1) ;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.338) 20%, transparent 30% );
+    color: #ffff;
+    box-shadow: 0 0 20px black;
 
 
 
-
-
+}
 
 
 /*Proximamente */
 
+#projects h2{
+    color: #00000000;
+
+
+}
 
 #Proximo{
     color: #000000;
@@ -453,6 +622,7 @@ h1 + p {
     display: flex;
     flex-direction: column;
     align-items: center;  
+    
 
 
 }
@@ -477,6 +647,7 @@ h1 + p {
 
     box-shadow: 1px 10px 15px rgb(0, 10, 6) ;
   
+    margin-top: 50px;
 
 
 
@@ -552,10 +723,9 @@ h1 + p {
 
 #skills{
 
-   
 
-    width: 110%; /* 100% del viewport */
-    margin-left: -30px; /* compensa el margen de #envoltura */
+    width: 110%; 
+    margin-left: -30px;
 
     padding: 20px;
     background:  linear-gradient(rgb(27, 83, 49), rgb(0, 0, 0)); 
@@ -565,26 +735,27 @@ h1 + p {
   
     margin-top: 100px;
     
-
+ 
 }
 
 
-.cajitaSkills{
 
-  background-color: #ffffff;
-  color: #02530e;
-  padding: 10px 50px;
-  width: 100%;
-  max-height: 500px;
-  max-width: 500px; /* se adapta pero no crece más de esto */
-  margin: 40px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  box-sizing: border-box; /* asegura que el padding no rompa el ancho */
+.ContenedorSkills{
 
+    background-color: #dfece3;
+    color: #02530e;
+    padding: 0 50px;
+    width: 100%;
 
+    max-width: 500px; /* se adapta pero no crece más de esto */
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.696);
+    box-sizing: border-box; /* asegura que el padding no rompa el ancho */
 
+ 
 
+   overflow: hidden;
 }
 
 
@@ -592,42 +763,47 @@ h1 + p {
 
 
     color: #00000000;
+   
 
 
 }
 
 
-.cajitaSkills h3{
+.ContenedorSkills h3{
 
-    font-size: 40px;
+   
+    font-size: 35px;
     text-align: start;
 
 
 
 }
 
-.cajita{
-    max-height: 140px;
-    width: 100%;
-
-
-    padding: 30px 0 100px 0;
-    overflow: hidden;
-
+.cajitaSkills{
+   
+    max-width:400px;
   
-    display: flex;
   
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content:space-evenly; 
-
-    position: relative;
-    flex-direction: row;
-    flex-wrap: nowrap;
     color: #000;
     text-align: center;
+    transition: background-color .4s;
+
+
+   overflow: hidden;
+
     
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    grid-template-rows: repeat(2, auto);
+   
     
+    padding: 30px 0 80px 0;
+   
+
+    border-radius: 12px;
+    max-height: 150px;
+   
+  
  
 }
 
@@ -640,23 +816,22 @@ h1 + p {
     align-items: center;
     justify-content: center;
 
-    min-width: 60px;
-    min-height:60px;
-    max-width: 60px;
-    min-height: 60px;
+    min-width: 50px;
+    min-height:50px;
+    max-width: 100px;
+    min-height: 100px;
 
-    margin: 10px 10px 10px 0;
-    background-color: #cdf0d9;  
+    margin: 0 10px 10px 0;
+    
+   
 
-    animation-delay: 0s;
-    animation-fill-mode: both ;
+    animation:  skills-movements  10s  infinite  ;
 
-  
+    animation-timing-function: ease-in-out;
 
-    animation:  skills-movements  5s  infinite  ;
+    transition: transform 0.5s;
 
-    animation-direction: alternate; 
-    animation-timing-function: linear;
+
 
 }
 
@@ -664,33 +839,260 @@ h1 + p {
 
 .C, .skill_Cs, .skill_C{
 
-  background-color: #7dd49a;
+  
     color: #000;
+    
 }
 
 
 
 
+.Skill::after{
+
+   
+    content: '';
+   
+    min-width: 100px;
+    min-height:100px;
+    max-width: 100px;
+    min-height: 100px;
+    
+
+
+    position: absolute;
+
+}
+
+
+.Skill:hover::after{
+
+
+    background-color: #00000069;
+    color: #dfece3;
+    content: ' habilidades gracias a youtue';
+ 
+    clip-path: polygon(51% 100%, 100% 55%, 91% 0, 9% 0, 0 56%);
+
+}
+
+.Skill:hover{
+   
+  
+    color:#dfece3;
+    z-index: 55;
+    transform: scale(1.5) rotateY(360deg) translatey(-25px);
+
+ 
+
+
+}
+
+
+
+.cajitaSkills:hover .Skill{
+
+    animation: paused;
+  overflow: visible;
+
+
+
+}
+
+
+
+.cajitaSkills:hover {
+
+    background-color: #dfece38c;
+    
+  overflow-x: scroll;
+ 
+  overflow: visible;
+
+      
+}
+
+
+
+.Skill .imagenSkill{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+
+
+
+}
 
 @keyframes skills-movements {
-    0%{
-      
-         
-    }
-    50%{
-           transform:  translate(0) ;
+   
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(100px); }
+  30%  { transform: translateX(0); }
+  60%  { transform: translateX(0); }   
+  80%  { transform: translateX(-100px); }
+  90%  { transform: translateX(0); }
+  100% { transform: translateX(0); }
 
-       
-
-    }
-    100%{
-        transform:  translate(-575px) rotate(60deg);
-
-     
-    
-    }
 }
 
+
+/*Habilidades blandas*/
+            
+.hola{
+
+    color: rgba(255, 255, 255, 0.263);
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+
+
+
+.contenedorH{
+
+    position: absolute;
+    width: 35%;
+    height: 100%;
+  
+
+    display: flex;
+ 
+    gap: 80px;
+
+    flex-flow: column wrap;
+    
+  
+
+
+}
+
+
+.blandSkill{
+
+    color: rgba(255, 255, 255, 0.311);
+    margin-left: 100px;
+
+       view-timeline: --cajita block;
+    animation: holitas1;
+    animation-timeline: --cajita; /*con view() empieza la animacion apenas se vea un poco el elemento o tambien se le puede dar el nombre del elemento que queramos que al verse empiece la animacion como: --cajita*/
+
+
+
+
+}
+
+.contenedorH2{
+
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    z-index: 55;
+
+    display: flex;
+    align-items: end;
+ 
+    right: 0;
+    gap: 80px;
+
+    flex-flow: column wrap;
+  
+
+}
+
+
+.blandSkill2{
+
+    color: rgba(255, 255, 255, 0.45);
+    margin-right: 100px;
+
+  
+
+
+}
+
+
+.blandSkill:hover, .blandSkill2:hover{
+    color: rgb(255, 255, 255);
+
+    
+
+}
+
+
+
+
+
+
+
+/*ABOUT ME*/
+
+#about_me{
+
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgb(0, 0, 0) 100%), url(https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg);
+
+    background-position: center;
+     background-size: cover;
+
+    margin-left: -30px; 
+
+    color: #fff;
+
+
+}
+
+
+.contenedorAbout{
+
+    background-color: rgba(0, 0, 0, 0.71);
+
+
+}
+
+
+.contenedorAbout h2{
+    opacity: 0;
+    margin-top: 0;
+
+    
+
+}
+
+
+
+.contenedorAbout p{
+
+    font-size: 20px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-align: left;
+
+    padding: 100px 100px;
+
+    width: 50%;
+
+    color: rgba(255, 255, 255, 0.489);
+    
+  
+    transition: transform .8s,    text-align 5s,    text-shadow 1s,  color 1.5s;
+    margin-bottom: 0;
+}
+
+
+
+.contenedorAbout p:hover{
+
+    transform: translate(50px);
+
+    color: rgb(223, 222, 222);
+    text-shadow: 0 0 15px  rgba(0, 255, 174, 0.701);
+
+
+     
+
+}
 
 
 
@@ -708,7 +1110,6 @@ h1 + p {
     color: rgb(0, 0, 0);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 
-    background-image: url(https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_1280.jpg);
 
 
 
@@ -721,8 +1122,9 @@ h1 + p {
     width: 100%;
     padding: 300px 50px;
 
-    background-color: #00000082;
+ 
     justify-content:space-evenly; 
+ 
    
 }
 
@@ -736,12 +1138,13 @@ h1 + p {
     font-size: 40px;
     border-radius: 20%;
     box-shadow: 0 0 20px rgba(255, 253, 253, 0.564);
-
+    margin-right: 100px;
+    
 }
 
 .pieza:hover{
     z-index: 10;
-    transform: scale(1.6) ;
+    transform: scale(1.6) translateX(15px) ;
 
 
 }
@@ -758,6 +1161,8 @@ h1 + p {
 
 
 }
+
+
 
 
 
