@@ -1,336 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-
-    <link rel="stylesheet" href="style.css">   
-
-
-    <title>Portafolio-Denizar</title>
-
-
-
-</head>
-
-<!-- EMPIEZA EL BODY -->
-
-<body>
-
-   
-
-    <div id="first-Fondo">
-        <div class="objets objets_cuadro">  </div>
-        <div class="objets objets_rombo">  </div>
-
-        <div class="objets objets_cuadro2">  </div>
-        <div class="objets objets_rombo2">  </div>
-
-        <div class="objets objets_cuadro3">  </div>
-        <div class="objets objets_rombo3">  </div>
-
-
-    </div>
-
-
-    <!-- HEADER-->
-        
-    <header class="headercito">
-
-        <div class="header__overlay"></div>
-
-    
-    </header>  
-
-       <h2 id="home">Home</h2>
-        
-    <nav class="navcitoADA"> 
-
-        <div class="nav__ul-container">
-
-            <ul class="nav__ul">
-
-                <li class="nav__item">  <a href="#home" class="nav__link link--Home"> Home </a>   </li>
-                <li class="nav__item">  <a href="#projects" class="nav__link "> Projects </a>   </li>
-                <li class="nav__item">  <a href="#skills" class="nav__link">Skills </a>   </li>
-                <li class="nav__item">  <a href="#about_me" class="nav__link">About me </a>   </li>
-                <li class="nav__item">  <a href="#Contact" class="nav__link">Contact </a>   </li>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="style.css">
             
-            </ul>
-
-         </div>
-
-           
-
-    </nav>
-
-
-    <div class="contenedor_logo"> 
-
-        <div class="nav__logo-container">
-            <h2>  DENIZAR </h2>
-
-        </div>
-
-    </div>
-
-
-    
-    <div id="envoltura">
-
-        <section id="Encabezado"> 
-
-            <div class="nombre">
-
-                <h1> Marvin Denizar Ramirez Montes</h1> 
-                <h3 class="Disponibilidad">Actualmente disponible</h3>
-                <a href="CurriculoPrueba.pdf" download class="boton-descarga" title="Descargar Curriculo" >  <i class="fa fa-file-text"></i> - Descargar CV <i class="fa fa-download"></i> </a>
-                <p class="clase">Desarrollador Jr. apasionado por el detalle y estilo</p>
-
-
-                <div class="skillsEncabezado">   
-                    <h3 class="ski">Skills:</h3>
-                    <div class="IconSkill ">  <i class="devicon-java-plain-wordmark" title="Java" class="iconitoTiquito"></i>  </div>
-                    <div class="IconSkill">   <i class="devicon-cplusplus-plain"></i> </div>
-                    <div class="IconSkill ">  <i class="devicon-csharp-line"></i> </div>
-                    <div class="IconSkill">   <i class="devicon-azuresqldatabase-plain"></i> </div>
-                    <div class="IconSkill">   <i class="devicon-html5-plain-wordmark"></i> </div>
-                    <div class="IconSkill">   <i class="devicon-css3-plain-wordmark"></i></div>
-                    <div class="IconSkill" >  <i class="devicon-git-plain"></i> </div>
-                    <div class="IconSkill" >  <i class="devicon-github-original-wordmark"></i></div>
-
+            
+        <title>Portafolio-Denizar</title>
+            
+            
+            
+    </head>
+        
+    <!-- EMPIEZA EL BODY -->
+        
+    <body>
+        
+        
+        
+        
+        
+        <input type="radio" name="botonC" id="cambiador" class="botn">
+        
+        <input type="radio" name="botonC" id="cambiador2" class="botn">
+        
+        <input type="radio" name="botonC" id="cambiador3" class="botn">
+        
+        <input type="radio" name="botonC" id="cambiador4" class="botn">
+        
+        <input type="radio" name="botonC" id="cambiador5" class="botn">
+        
+        
+        
+        <div id="envoltura">
+            
+            <!-- HEADER-->
+            
+            <input type="checkbox" id="toggleBotones" checked>
+            <label for="toggleBotones" class="checkbox-custom"> <i class="fa-solid fa-brush"></i> </label>
+            
+            
+            <div class="grupo-botones">
+        
+                <label class="radios" for="cambiador"> <i class="fas fa-moon"></i> </label>
+                <label class="radios" for="cambiador2"> <i class="fas fa-sun"></i> </label>
+                <label class="radios" for="cambiador3"> <i class="fas fa-cat"></i></label>
+                <label class="radios" for="cambiador4"> <i class="fa-solid fa-tree"></i> </label>
+                <label class="radios radiohome" for="cambiador5"> <i class="fa-solid fa-arrow-up"></i> </label>
+            
+            
+            </div>
+            
+            
+            
+            <header class="headercito">
+            
+                <div class="header__overlay"></div>
+            
+            </header>
+            
+            <h2 id="home">Home</h2>
+            
+            <nav class="navcitoADA">
+            
+                <div class="nav__ul-container">
+            
+                    <ul class="nav__ul">
+            
+                        <li class="nav__item"> <a href="#home" class="nav__link link--Home"> Home </a> </li>
+                        <li class="nav__item"> <a href="#projects" class="nav__link "> Projects </a> </li>
+                        <li class="nav__item"> <a href="#skills" class="nav__link">Skills </a> </li>
+                        <li class="nav__item"> <a href="#about_me" class="nav__link">About me </a> </li>
+                        <li class="nav__item"> <a href="#Contact" class="nav__link">Contact </a> </li>
+            
+                    </ul>
+            
                 </div>
-
-
+        
+            
+            </nav>
+            
+            
+            <div class="contenedor_logo">
+            
+                <div class="nav__logo-container">
+                    <h2 class="logoDenizar"> DENIZAR </h2>
+                    <h3> <a href="mailto:ramirezmontesmarvin@gmail.com" class="correoEn">ramiresmontesmarvin@gmail.com </a></h3>
+            
+            
+                </div>
+            
             </div>
             
-         
             
-    
-        </section>
-
-        
-
-      
-
-        
-        <div id="Proximo">
-
-            <div class="separador"> </div>
-
-            <div id="mensaje"> Trabajando... </div>
-
-            <div class="separador"> </div>
-
-
-        </div>
-    
-
-        <section id="projects">   
-
-            <h2> Projects:</h2> 
-
-            <div class="ContenedorP"> 
-
-                <section class="project"> Proyecto1 <a href="#">Link GitHub</a> </section>
-                <section class="project"> Proyecto2 <a href="#">Link GitHub</a> </section>
-                <section class="project"> Proyecto3 <a href="#">Link GitHub</a> </section>
-
-
-            </div>
-
-
-
-
-
-
-
-        
-        </section>
-
-
-        <div id="Proximo">
-
-            <div class="separador"> </div>
-
-            <div id="mensaje"> Trabajando... </div>
-
-            <div class="separador"> </div>
-
-
-        </div>
             
-    
-
-        <section id="skills" >   
-            <h2> Skills: </h2>
+            
+            
+            <section id="Encabezado">
+            
+            
+                <div class="nombre">
+            
+                    <h1> Marvin Denizar Ramirez Montes</h1>
+                    <h3 class="Disponibilidad">Actualmente disponible</h3>
+                    <a href="CurriculoPrueba.pdf" download class="boton-descarga" title="Descargar Curriculo"> <i
+                    class="fa fa-file-text"></i> - Descargar CV <i class="fa fa-download"></i> </a>
+                    <p class="clase">Desarrollador Jr. apasionado por el detalle y estilo</p>
+            
+            
+                    <div class="skillsEncabezado">
+                        <h3 class="ski">Skills:</h3>
+                        <div class="IconSkill "> <i class="devicon-java-plain-wordmark" title="Java" class="iconitoTiquito"></i>
+                        </div>
+                        <div class="IconSkill"> <i class="devicon-cplusplus-plain"></i> </div>
+                        <div class="IconSkill "> <i class="devicon-csharp-line"></i> </div>
+                        <div class="IconSkill"> <i class="devicon-azuresqldatabase-plain"></i> </div>
+                        <div class="IconSkill"> <i class="devicon-html5-plain-wordmark"></i> </div>
+                        <div class="IconSkill"> <i class="devicon-css3-plain-wordmark"></i></div>
+                        <div class="IconSkill"> <i class="devicon-git-plain"></i> </div>
+                        <div class="IconSkill"> <i class="devicon-github-original-wordmark"></i></div>
+            
+                    </div>
+            
+            
+                </div>
+            
+            
+            
+            
+            </section>
         
 
-            <h3 class="hola"> Habilidades blandas  </h3>
 
 
-            <div class="contenedorH">
+            <section id="projects">
             
-                <div class="blandSkill"> Aprendizaje rápido </div>
-                <div class="blandSkill"> Responsabilidad</div>
-                <div class="blandSkill"> Trabajo bajo presión</div>
-                <div class="blandSkill"> Puntualidad</div>
-
-            </div>
-
-                
-
-            <div class="contenedorH2">
-
-                
-                <div class="blandSkill2"> Responsabilidad</div>
-                <div class="blandSkill2"> Polifuncionalidad</div>
-                <div class="blandSkill2"> Carismático</div>
-                <div class="blandSkill2"> Excelente servicio al cliente </div>
-
-
-            </div>
-
-
-
-
-
-            <div class="ContenedorSkills">
-          
-               
-                <h3> Actualmente tengo conocimientos en:  </h3> 
-
-                
-                <div class="cajitaSkills"> 
-                    <div class="Skill java">  <img src="Imagenes/Java-logo-icon.svg" alt="Logo Java" title="Java" class="imagenSkill"> </div>
-                    <div class="Skill">   <img src="Imagenes/C++logo-icon.svg" alt="Logo C++" title="C++" class="imagenSkill">  </div>
-                    <div class="Skill C">  <img src="Imagenes/Chash -logo-icon.svg" alt="Logo C#" title="C#" class="imagenSkill"> </div>
-                    <div class="Skill skill_C">JSON</div>
-                    <div class="Skill skill_Cs"> TCP/IP</div>
-                    <div class="Skill">  <img src="Imagenes/Sql-logo-icon.png" alt="Logo SQL" title="SQL" class="imagenSkill">  </div>
-                    <div class="Skill">  <img src="" alt=""> <img src="Imagenes/Html5-logo-icon.svg" alt="Logo Html" title="HTML"  class="imagenSkill">  </div>
-                    <div class="Skill">  <img src="" alt=""> <img src="Imagenes/CSS-logo-icon.svg" alt="Logo CSS" title="CSS"  class="imagenSkill"> </div>
-                    <div class="Skill" >  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Logo Git" title="Git"  class="imagenSkill">  </div>
-                    <div class="Skill">  <img src="Imagenes/GitHub-logo-iconl.svg" alt="Logo GitHub" title="GitHub" class="imagenSkill"> </div>
-
-
-                
+                <h2> Projects:</h2>
+            
+            
+            
+                <div class="ContenedorP">
+            
+                    <div class="detalle1"></div>
+                    <div class="detalle2"></div>
+            
+                    <section class="project project1">
+            
+                        <img src="Imagenes/portadaPortafolio.webp" alt="Logo Java" title="Java" class="imgPortafolio">
+            
+            
+                        <div class="ContenedorDescripcion">
+            
+                            <div class="Titulote"> Portafolio</div>
+            
+                            <div class="descripcion">Proyecto actual, creado solo con las siguientes tecnologias. </div>
+            
+                            <div class="tecnologias ">
+            
+                                <i class="devicon-css3-plain-wordmark"></i>
+            
+                                <i class="devicon-html5-plain-wordmark"></i>
+            
+                            </div>
+            
+                        </div>
+            
+                        <a href="#home">Link GitHub</a>
+            
+            
+                    </section>
+            
+            
+                    <section class="project project1"> <a href="#">Link GitHub</a>
+            
+            
+                        <img src="Imagenes/portada2Portafolio.png" alt="Logo Java" title="Java" class="imgPortafolio">
+            
+            
+                        <div class="ContenedorDescripcion">
+            
+                            <div class="Titulote"> Aplicacion Tienda Juegos</div>
+            
+                            <div class="descripcion">Proyecto Cliente/Servidor, el cual se manejo JSON <br>y TCP, enlazado a
+                                una base de datos, creado <br>solo con las siguientes tecnologias. 
+                            </div>
+            
+                            <div class="tecnologias ">
+            
+                                <i class="devicon-csharp-line"></i>
+            
+                                <i class="devicon-azuresqldatabase-plain"></i>
+            
+            
+            
+            
+                            </div>
+            
+                        </div>
   
+                    </section>
+            
+     
+                    <section class="project project1"> <a href="#">Link GitHub</a>
+            
+                        <img src="Imagenes/kirby.png" alt="Logo Java" title="Java" class="imgPortafolio">
+            
+            
+            
+                        <div class="ContenedorDescripcion">
+            
+                            <div class="Titulote"> Proximamente</div>
+            
+                            <div class="descripcion">Trabajo en proceso con Java y alguna otras <br> tecnologias como el
+                                bote de carga mejor conocido <br> como docker. Posiblemente usar ya frameworks <br> como
+                                play con java o .net con C#
+                            </div>
+            
+                            <div class="tecnologias tecnologias2">
+            
+                                <i class="devicon-java-plain"></i>
+            
+                                <i class="devicon-docker-plain"></i>
+            
+                                <i class="devicon-csharp-line"></i>
+            
+                                <i class="devicon-dot-net-plain"></i>
+            
+                            </div>
+            
+                        </div>
+            
+                    </section>
+            
+                
+                    <div class="detalle3"></div>
+                    <div class="detalle4"></div>
+                
+                
+                </div>
+            
+            
+            </section>
+            
+            
+            <div id="Proximo">
+            
+                <div class="separador"> </div>
+            
+                <div id="mensaje"> Trabajando... </div>
+            
+                <div class="separador"> </div>
+            
+            
+            </div>
+            
+            
+            
+            <section id="skills">
+                <h2> Skills: </h2>
+            
+            
+                <h3 class="hola"> Habilidades blandas </h3>
+            
+            
+                <div class="ContenedordelContenedorHs">
+            
+                    <div class="contenedorH">
+            
+                        <div class="blandSkill"> Aprendizaje continuo </div>
+                        <div class="blandSkill"> Responsabilidad</div>
+                        <div class="blandSkill"> Trabajo bajo presión</div>
+                        <div class="blandSkill"> Autodidacta</div>
+            
+                    </div>
+            
+            
+            
+                    <div class="contenedorH2">
+            
+            
+                        <div class="blandSkill2"> Resolucion de problemas</div>
+                        <div class="blandSkill2"> Polifuncionalidad</div>
+                        <div class="blandSkill2"> Comunicacion</div>
+                        <div class="blandSkill2"> Excelente servicio al cliente </div>
+            
+            
+                    </div>
+                    
+                </div>
+            
+            
+            
+            
+                <div class="ContenedorSkills">
+            
+                    <h3> Actualmente tengo conocimientos en: </h3>
+            
+            
+                    <div class="cajitaSkills">
+
+
+                        <div class="Skill"> 
+
+                            <img src="Imagenes/Java-logo-icon.svg" alt="Logo Java" title="Java"class="imagenSkill"> 
+                        
+                        </div>
+
+                        <div class="Skill"> 
+
+                            <img src="Imagenes/C++logo-icon.svg" alt="Logo C++" title="C++" class="imagenSkill"> 
+                        
+                        </div>
+
+
+                        <div class="Skill">
+                            <img src="Imagenes/Chash -logo-icon.svg" alt="Logo C#" title="C#" class="imagenSkill"> 
+                        
+                        </div>
+            
+            
+                        <div class="Skill"> 
+                            
+                            <img src="Imagenes/Sql-logo-icon.png" alt="Logo SQL" title="SQL" class="imagenSkill"> 
+                        
+                        </div>
+            
+
+                        <div class="Skill Vacio"></div>
+            
+
+                        <a href="#projects">
+                            <div class="Skill"> 
+
+                                <img src="Imagenes/Html5-logo-icon.svg" alt="Logo Html" title="HTML" class="imagenSkill"> 
+                           
+                            </div>
+                            
+                        </a>
+
+
+                        <a href="#projects">
+                            <div class="Skill">
+
+                                <img src="Imagenes/CSS-logo-icon.svg" alt="Logo CSS" title="CSS" class="imagenSkill"> 
+                            
+                            </div>
+                        
+                        </a>
+            
+
+                        <div class="Skill"> 
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Logo Git" title="Git" class="imagenSkill"> 
+                        
+                        </div>
+
+
+                        <div class="Skill"> 
+                            
+                            <img src="Imagenes/GitHub-logo-iconl.svg" alt="Logo GitHub" title="GitHub" class="imagenSkill"> 
+                        
+                        </div>
+            
+    
+            
+                    </div>
+            
+                </div>
+            
+            
+            
+            </section>
+            
+            
+            
+            
+            
+            <section id="about_me">
+            
+            
+            
+                <div class="contenedorAbout">
+            
+            
+                    <h2> About me: </h2>
+            
+            
+                    <p>Hola es un placer que puedas ver mi portafolio, gracias por darme el visto y cualquier sugerencia o
+                        ayuda es bien recibida y te agradecería mucho. Actualmente tengo un diplomado en informática y
+                        estudios por cuenta propia aparte debido a que estoy muy interesado en aprender cada día más y tener
+                        un vasto conocimiento de la carrera, me gusta mucho los detalles en mis trabajos y una buena
+                        presentación ante nada, que sea legible y entendible lo máximo posible, además que tenga un muy buen
+                        estilo y funcionalidad. 
+                    </p>
+            
+                </div>
+            
+            </section>
+            
+
+            
+            
+            <section id="logros">
+
+            
+                <div class="zona-galeria">
+            
+            
+                    <div class="pieza pieza1" style="--rot: -10deg; --x: -80px; --y: -30px;">
+                        <img src="https://vinculos.co/wp-content/uploads/2024/02/Diseno-sin-titulo-4.jpg" alt="Imagen 1">
+                        
+                        <div class="detallesIMG"> 
+                            
+                            <span class="TituloLogro"> Diplomado en informática </span> Titulo
+                            recibido el 2025 de agosto. Universidad Nacional de Educación a Distancia (UNED) 
+                        
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="pieza pieza2" style="--rot: 5deg; --x: 60px; --y: -20px;">
+                            
+                        <img src="https://media.istockphoto.com/vectors/degree-certificate-award-vector-id1093966790?k=6&m=1093966790&s=612x612&w=0&h=em7K7SjWc3jaulc5ZEEo1dGB2gDV3sKPQx5QpGRRXU0=" alt="Imagen 2">
+                            
+                        <div class="detallesIMG"> <span class="TituloLogro"> Diplomado en informática </span> Titulo
+                               
+                                recibido el 2025 de agosto. Universidad Nacional de Educación a Distancia (UNED) 
+                            
+                        </div>
+
+                    </div>
+
+
+            
+                    <div class="pieza pieza3" style="--rot: -3deg; --x: -40px; --y: 40px;">
+                            
+                        <img src="https://media.licdn.com/dms/image/D5612AQEz5TzUcndSUw/article-cover_image-shrink_600_2000/0/1706557862636?e=2147483647&v=beta&t=kK-1X5D26C6_6fv-ntewMdMaOIpkJV6UbEIMuuHzXp0" alt="Imagen 3">
+
+                        <div class="detallesIMG"> 
+                                
+                            <span class="TituloLogro"> Diplomado en informática </span> Titulo
+                            recibido el 2025 de agosto. Universidad Nacional de Educación a Distancia (UNED) 
+                            
+                        </div>
+                        
+                    </div>
+
+
+            
+                    <div class="pieza pieza4" style="--rot: 12deg; --x: 70px; --y: 50px;">
+                            
+                        <img src="https://th.bing.com/th/id/R.00853e6e515749735198313e9c466b41?rik=hPGfsUAUZjqYCA&riu=http%3a%2f%2fwww.postil.la%2fwp-content%2fuploads%2f2023%2f10%2ftitulo-academico-propio.jpg&ehk=CkFHAL0ca1T%2fQBYUsKjFOMcrmTew%2fBmT%2bf00pYZmjtg%3d&risl=&pid=ImgRaw&r=0" alt="Imagen 4">
+                            
+                        <div class="detallesIMG"> 
+                            <span class="TituloLogro"> Diplomado en informática </span> Titulo
+                            recibido el 2025 de agosto. Universidad Nacional de Educación a Distancia (UNED) 
+                            
+                        </div>
+
+                    </div>
+            
+            
+                </div>
+            </section>
+            
+
+            <div class="Deco"></div>
+            <div class="Deco2"></div>
+  
+            <div class="Fondo">
+            
+                <div id="Contact"> </div>
+            
+            
+                <form class="FondoFormulario">
+            
+                    <h2 class="titulo_Formulario">Formulario de interes</h2>
+            
+            
+                    <!-- Simple inputs -->
+            
+                    <fieldset class="fieldset_basico">
+            
+                        <legend> Datos </legend>
+            
+                        <div class="fondoInput">
+            
+                            <label class="label_formulario" for="nombre">Nombre completo</label>
+                            <input class="CambioInput" type="text" placeholder="Ejemplo Denizar" id="nombre">
+            
+                        </div>
+            
+                        <div class="fondoInput">
+            
+                            <label for="email" class="label_formulario">Correo Electronico </label>
+                            <!--label for para ligar al id del input-->
+                            <input class="CambioInput" type="email" placeholder="Ejemplo@gmail.com" id="email">
+            
+                        </div>
+            
+                    </fieldset>
+            
+            
+            
+                    <!-- TEXTAREA -->
+                    <div class="fondoInput">
+            
+                        <label class="label_formulario"> Mensaje
+            
+                            <textarea class="Textarea" placeholder="Deja tu mensaje..."></textarea>
+            
+                        </label> <!--Se puede agregar dento del label a ligar el click-->
+            
+            
+                    </div>
+            
+            
+                </form>
+            </div>
+            
+            
+    
+            <footer id="Contacto">
+            
+                <div class="logo_footer"> DENIZAR</div>
+            
+                <div class="contact_footer">
+            
+                    <ul class="contact_ul">
+            
+            
+                        <li class="nav_item"> <a href="https://www.facebook.com/" target="_blank" class="nav_link"> <i
+                        class="fab fa-facebook"></i> Facebook </a> </li>
+                        <li class="nav_item"> <a href="mailto:ramirezmontesmarvin@gmail.com" target="_blank" class="nav_link">
+                        <i class="fa-solid fa-envelope"></i> Email</a> </li>
+                        <li class="nav_item"> <a href="https://www.instagram.com/5_jack_4/" target="_blank" class="nav_link"> <i
+                        class="fab fa-instagram"></i> Instagram </a> </li>
+                        <li class="nav_item"> <a href="https://github.com/" target="_blank" class="nav_link"> <i
+                        class="fab fa-github"></i> GitHub</a> </li>
+            
+                        <li class="nav_item"> <a href="CurriculoPrueba.pdf" target="_blank" class="nav_link"> <i
+                        class="fa fa-file-text"></i> Curriculo <i class="fa fa-download"></i></a> </li>
+            
+                    </ul>
+            
+                </div>
+            
+            </footer>
+            
+            
 
         
-                    
-                </div>
-                
-            </div>
-
-       
-            
-        </section>
-
-
-
-
-
-  <section id="about_me">   
-
-
-
-            <div class="contenedorAbout">
-                 
-                
-                <h2> About me: </h2>
-                
-         
-                <p>Hola es un placer que puedas ver mi portafolio, gracias por darme el visto y cualquier sugerencia o ayuda es bien recibida y te agradecería mucho. Actualmente tengo un diplomado en informática y estudios por cuenta propia aparte debido a que estoy muy interesado en aprender cada día más y tener un vasto conocimiento de la carrera, me gusta mucho los detalles en mis trabajos y una buena presentación ante nada, que sea legible y entendible lo máximo posible, además que tenga un muy buen estilo y funcionalidad. </p>
-
-            </div>
-            
-        </section>
-
-
-
-
-
-
-
-
-
-        <section id="logros">
-
-          
-                
-              
-
-            <div class="zona-galeria">
-
-
-                <div class="pieza pieza1" style="--rot: -10deg; --x: -80px; --y: -30px;">
-                    <img src="https://vinculos.co/wp-content/uploads/2024/02/Diseno-sin-titulo-4.jpg" alt="Imagen 1">
-                </div>
-                <div class="pieza pieza2" style="--rot: 5deg; --x: 60px; --y: -20px;">
-                    <img src="https://media.istockphoto.com/vectors/degree-certificate-award-vector-id1093966790?k=6&m=1093966790&s=612x612&w=0&h=em7K7SjWc3jaulc5ZEEo1dGB2gDV3sKPQx5QpGRRXU0=" alt="Imagen 2">
-                </div>
-                <div class="pieza pieza3" style="--rot: -3deg; --x: -40px; --y: 40px;">
-                    <img src="https://media.licdn.com/dms/image/D5612AQEz5TzUcndSUw/article-cover_image-shrink_600_2000/0/1706557862636?e=2147483647&v=beta&t=kK-1X5D26C6_6fv-ntewMdMaOIpkJV6UbEIMuuHzXp0" alt="Imagen 3">
-                </div>
-                <div class="pieza pieza4" style="--rot: 12deg; --x: 70px; --y: 50px;">
-                    <img src="https://th.bing.com/th/id/R.00853e6e515749735198313e9c466b41?rik=hPGfsUAUZjqYCA&riu=http%3a%2f%2fwww.postil.la%2fwp-content%2fuploads%2f2023%2f10%2ftitulo-academico-propio.jpg&ehk=CkFHAL0ca1T%2fQBYUsKjFOMcrmTew%2fBmT%2bf00pYZmjtg%3d&risl=&pid=ImgRaw&r=0" alt="Imagen 4">
-                </div>
-
-
-            </div>
-
-            
-            
-
-
-        </section>
-
-
-
-       
-
-    </div>
-
-      
-
-
-
-  
-        <footer id="Contact"> 
-
-            <div class="logo_footer">  DENIZAR</div>
-
-            <div class="contact_footer">
-
-                <ul class="contact_ul">
-                    
-                    
-                    <li class="nav_item"> <a href="https://www.facebook.com/"  target="_blank" class="nav_link">  <i class="fab fa-facebook"></i> Facebook  </a> </li> 
-                    <li  class="nav_item"> <a href="mailto:ramirezmontesmarvin@gmail.com" target="_blank" class="nav_link"> <i class="fa-solid fa-envelope"></i> Email</a> </li>
-                    <li  class="nav_item"> <a href="https://www.instagram.com/5_jack_4/" target="_blank" class="nav_link"> <i class="fab fa-instagram"></i> Instagram  </a>  </li>
-                    <li  class="nav_item"> <a href="https://github.com/" target="_blank" class="nav_link">  <i class="fab fa-github"></i> GitHub</a> </li>
-                  
-                    <li  class="nav_item"> <a href="CurriculoPrueba.pdf"  target="_blank"  class="nav_link">   <i class="fa fa-file-text"></i>  Curriculo   <i class="fa fa-download"></i></a>  </li>
-
-                </ul>
-
-            </div>
-
-        </footer>
-
-
-</body>
+        </div>
+        
+        
+        
+        
+    </body>
+        
 </html>
-
-
-
-
-
-
-
-
