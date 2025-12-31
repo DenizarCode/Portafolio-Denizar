@@ -1,0 +1,495 @@
+
+:root {
+    --primary-colorFondo: #fff;
+    --primary-colorLetra: #fff;
+    --secondary-colorFondo: #000;
+    --secondary-colorLetra: #000;
+    --tertiary-colorFondo: #065b24b9;
+    --brightness: #24f9a4;
+    --fondo1: #c9f8dc;
+    --pantalla: #000000ac;
+    --fondo2: #335333;
+    --fondoSemiTrasnpartente:#40f56a24;
+}
+
+
+body{
+
+background-color: #585858;
+
+}
+#toggleBotones {
+    display: none;
+}
+
+.checkbox-custom {
+    position: fixed;
+    width: 20px;
+    margin: 10px 20px;
+    padding: 20px;
+    z-index: 60;
+    top: 425px;
+    right: 0;
+    background-color: var(--primary-colorFondo);
+    border-radius: 50px;
+    cursor: pointer;/*Para que al pasar el cursor se vea la*/
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.checkbox-custom:hover{
+    background-color: rgb(9, 9, 9);
+    color: var(--brightness);
+}
+.checkbox-custom:active {
+    border-radius: 50px;
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+input[type="checkbox"]:checked+.checkbox-custom {
+    background-color: var(--primary-colorFondo);
+    box-shadow: 0px 0px 25px var(--brightness);
+    border: none;
+}
+
+
+
+.grupo-botones{
+    position: fixed;
+    display: grid;
+    height: 400px;
+    width: 400px;
+    z-index: 55;
+    top: 60px;
+    right: 370px;
+    opacity: 0; 
+    grid-template-columns: repeat(2, 1fr);; /* Tres columnas: fija, fija y flexible */
+    grid-template-rows: repeat(3, 100px);
+    display: none;
+    
+}
+
+
+
+
+#toggleBotones:not(:checked)  ~ .grupo-botones {
+    opacity: 1;
+     display: grid;
+}
+
+.configuracion{
+    position: absolute;
+    text-align: center;
+    left: -25px;
+    right: 0;
+
+}
+
+.pruebe{
+    position: fixed;
+    content: '';
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(2px);
+    z-index: 55;
+    display: none;
+}
+
+
+.pruebe::after{
+    position: fixed;
+    content: '';
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 500px;
+    height: 430px;
+    top: 30px;
+    right: 445px;
+    background-color: var(--fondo1);
+    border: 3px solid var(--secondary-colorFondo);
+    z-index: 55;
+    border-radius: 20px;
+    
+    animation: identifier 1s both ;
+    display: none;
+}
+
+@keyframes identifier {
+    0%{  height: 00px;
+
+    }100%{
+          height: 430px;
+
+
+    }
+}
+
+#toggleBotones:not(:checked)  ~ .pruebe 
+ {
+    opacity: 1;
+    display: block;
+ 
+}
+#toggleBotones:not(:checked)  ~ .pruebe::after {
+    opacity: 1;
+     display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pruebe2{
+    position: fixed;
+    content: '';
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    z-index: -1;
+ 
+}
+
+
+.pruebe2::after{
+    position: absolute;
+    content: '';
+    right: 110px;
+    width: 120%;
+    height: 100%;
+    background-color: var(--fondo1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#toggleBotones:not(:checked)~.grupo-botones {
+    opacity: 1;
+}
+
+
+
+.radios{
+    margin: 10px 10px;
+    padding: 20px;
+    width: 100px;
+    height: 20px;
+    background-color: var(--tertiary-colorFondo);
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid var(--primary-colorFondo);
+    color: var(--primary-colorLetra);
+    margin-top: 80px;
+}
+
+
+.radios:hover:not(:nth-child(5)) {
+    background-color: rgba(0, 0, 0, 0.418);
+    color: var(--brightness);
+    transform: scale(1.1);
+}
+
+.radios:active {
+    transform: scale(.9);
+}
+
+
+
+#TemaNocturno,
+#TemaClaro,
+#TemaTierno,
+#TemaDefecto {
+    display: none;
+}
+
+/* CAMBIO DE TEMA, TEMA OSCURO*/
+
+#TemaNocturno:checked~#contenedor {
+    color: #8cbff6;
+    background-color: #000a3e;
+    --primary-colorFondo: #000a3e;
+    --primary-colorLetra: #8cbff6;
+    --secondary-colorFondo: #609ddf;
+    --secondary-colorLetra: #8cbff6;
+    background: linear-gradient(#000a3e, #000a3e);
+    --tertiary-colorFondo: #1f3edad1;
+    --brightness: #fcd136;
+    --fondo1: #09215d;
+    --pantalla: #000216cb;
+    --fondo2: #00001a;
+    --fondoSemiTrasnpartente:#40a1f524;
+}
+
+#TemaNocturno:checked~#contenedor h1 {
+    background-image: linear-gradient(to right, rgb(17, 0, 255) 0%, rgb(255, 238, 162) 50%);
+}
+
+#TemaNocturno:checked~#contenedor #skills,
+#TemaNocturno:checked~#contenedor .Fondo {
+    background: linear-gradient(rgb(3, 16, 31), rgb(20, 34, 49));
+}
+
+#TemaNocturno:checked {
+    background-image: url(https://cdn.pixabay.com/photo/2021/12/02/02/59/mountains-6839521_1280.jpg);
+   
+    background-color: red;
+}
+
+
+
+
+
+
+/* TEMA CLARO */
+
+#TemaClaro:checked~#contenedor {
+    color: #171104;
+    background-color: #fffac2;
+    --primary-colorFondo: #fffac2;
+    --primary-colorLetra: #171104;
+    --secondary-colorFondo: #040404;
+    --secondary-colorLetra: #171104;
+    background: linear-gradient(#fffac2, #fffac2);
+    --tertiary-colorFondo: #532e02d1;
+    --brightness: #ff5e00;
+    --fondo1: #8e6432;
+    --pantalla: #b8900fd6;
+    --fondo2: #e3ca79;
+    --fondoSemiTrasnpartente:#f8b12c3e;
+}
+
+#TemaClaro:checked~#contenedor h1 {
+    background-image: linear-gradient(to right, rgb(255, 136, 0) 0%, rgb(255, 98, 0) 50%);
+}
+
+#TemaClaro:checked~#contenedor #skills,
+#TemaClaro:checked~#contenedor .Fondo {
+    background: linear-gradient(rgb(250, 172, 90), rgb(225, 207, 117));
+}
+
+#TemaClaro:checked~#contenedor #about_me,
+#TemaClaro:checked~#contenedor .nombre {
+    background-image: url(https://cdn.pixabay.com/photo/2014/04/03/11/07/sun-311763_1280.png);
+    animation: movet .4s ease;
+    background-position: -30px -100px;
+}
+
+@keyframes movet {
+    0% {
+        transform: translateX(250px) translateY(-400px);
+    }
+    100% {
+        transform: translateX(-10px) translateY(10px);
+    }
+}
+
+/* TEMA TIERNO */
+
+#TemaTierno:checked~#contenedor {
+    color: #7d5e5e;
+    background-color: #ffc2c2;
+    --primary-colorFondo: #ffc2c2;
+    --primary-colorLetra: #7d5e5e;
+    --secondary-colorFondo: #895050;
+    --secondary-colorLetra: #ffffff;
+    background: linear-gradient(#ffc2c2, #ffc2c2);
+    --tertiary-colorFondo: #530202d1;
+    --brightness: #ae0000;
+    --fondo1: #e68a8a;
+    --pantalla: #310032ac;
+    --fondo2: #c26868;
+    --fondoSemiTrasnpartente:#f3575724;
+}
+
+#TemaTierno:checked~#contenedor h1 {
+    background-image: linear-gradient(to right, rgb(78, 40, 116) 0%, rgb(254, 128, 128) 50%);
+}
+
+#TemaTierno:checked~#contenedor #skills,
+#TemaTierno:checked~#contenedor .Fondo {
+    background: linear-gradient(rgb(196, 146, 146), rgb(201, 110, 110));
+}
+
+
+#TemaTierno:checked~#contenedor #about_me,
+#TemaTierno:checked~#contenedor .nombre {
+    background-image: url(https://cdn.pixabay.com/photo/2023/04/15/17/19/cat-7928232_1280.png);
+    background-position: 0 -100px;
+    animation: movet3 .4s ease;
+}
+
+@keyframes movet3 {
+    0% {
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateX(10px) translateY(-10px);
+    }
+}
+
+/* TEMA BASE */
+
+#TemaDefecto:checked~#contenedor .nombre {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000cc 10px), repeating-linear-gradient(#197e4d, #0a0a0a);
+    animation: movet4 .4s ease;
+}
+
+@keyframes movet4 {
+    0% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translateX(10px) translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contenedor{
+    position: relative;
+  display: grid;
+    border: 5px solid var(--secondary-colorFondo);
+      grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "imagen  detalles"
+    "imagen  AboutMe";
+    padding: 10px;
+    margin: 20px 100px;
+    gap: 2rem;
+    background-color:var(--fondo1);
+    box-shadow: 0 0 30px var(--brightness);
+
+}
+
+.titulo{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ 
+
+
+}
+
+.imagen{
+  grid-area: imagen;
+  padding: 15PX;
+  margin-top: 50px;
+  color:  var(--fondo2);
+ 
+
+}
+
+.detalles{
+    grid-area: detalles;
+    border: 2px solid var(--secondary-colorFondo);
+    margin-top: 50px;
+     
+    
+}
+
+.contenido{
+
+    background-color:var(--fondo2);
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid var(--secondary-colorFondo);
+ 
+}
+
+
+.AboutMe{
+ grid-area: AboutMe;
+     border: 2px solid var(--secondary-colorFondo);
+ 
+}
+
+.imag{
+     grid-area: imagen;
+    width: 200px;
+    height: 200px;
+    border: 20px;
+     
+}
+

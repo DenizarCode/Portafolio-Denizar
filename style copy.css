@@ -11,12 +11,12 @@
     --primary-colorLetra: #fff;
     --secondary-colorFondo: #000;
     --secondary-colorLetra: #000;
-    --tertiary-colorFondo: #065b24b9;
-    --brightness: #24f9a4;
-    --fondo1: #c9f8dc;
+    --tertiary-colorFondo: #708fb8b9;
+    --brightness: #caf2fc;
+    --fondo1: #a3b0ec;
     --pantalla: #000000ac;
-    --fondo2: #335333;
-    --fondoSemiTrasnpartente:#40f56a24;
+    --fondo2: #151b21;
+    --fondoSemiTrasnpartente:#4088f524;
 }
 
 /* Html */
@@ -24,7 +24,7 @@
 html {
     width: 100%;
     /*overflow-x: hidden;*/
-    scrollbar-color: #4CAF50 #383838;
+    scrollbar-color: #4cafa2 #383838;
 }
 
 #home {
@@ -39,7 +39,7 @@ html {
 body {
     width: 100%;
     margin: 0px;
-    background: linear-gradient(rgb(32, 104, 61), rgb(209, 248, 213));
+    background: linear-gradient(rgb(32, 72, 104), rgb(209, 248, 247));
     color: var(--secondary-color);
     text-align: justify;
     font-family: 'Roboto', sans-serif;
@@ -68,10 +68,6 @@ body {
     border-right: 2px solid #000;
 }
 
-.checkbox-custom:hover{
-    background-color: rgb(9, 9, 9);
-    color: var(--brightness);
-}
 .checkbox-custom:active {
     border-radius: 50px;
     cursor: pointer;
@@ -104,10 +100,7 @@ input[type="checkbox"]:checked+.checkbox-custom {
     grid-template-columns: repeat(2, 1fr);; /* Tres columnas: fija, fija y flexible */
     grid-template-rows: repeat(3, 100px);
     display: none;
-    
 }
-
-
 
 
 #toggleBotones:not(:checked)  ~ .grupo-botones {
@@ -215,7 +208,8 @@ input[type="checkbox"]:checked+.checkbox-custom {
 
 .radiohome:hover{
     background-color: rgba(9, 9, 9, 0.384);
-    color: var(--brightness);
+    color: var(--primary-colorLetra);
+
 }
 
 .radios{
@@ -226,7 +220,7 @@ input[type="checkbox"]:checked+.checkbox-custom {
     background-color: var(--tertiary-colorFondo);
     text-align: center;
     border-radius: 50px;
-    border: 2px solid var(--primary-colorFondo);
+    border: 2px solid white;
     color: var(--primary-colorLetra);
     margin-top: 80px;
 }
@@ -234,7 +228,6 @@ input[type="checkbox"]:checked+.checkbox-custom {
 
 .radios:hover:not(:nth-child(5)) {
     background-color: rgba(0, 0, 0, 0.418);
-    color: var(--brightness);
     transform: scale(1.1);
 }
 
@@ -247,8 +240,7 @@ input[type="checkbox"]:checked+.checkbox-custom {
 #TemaNocturno,
 #TemaClaro,
 #TemaTierno,
-#TemaDefecto, 
-#NoAnimation{
+#TemaDefecto {
     display: none;
 }
 
@@ -383,46 +375,6 @@ input[type="checkbox"]:checked+.checkbox-custom {
     }
 }
 
-
-/* Tema anti Epilepsia y Daltonismo */
-
-
-
-#NoAnimation:checked~#envoltura {
-    color: #f2ff00;
-    background-color: #2f5fc6;
-    --primary-colorFondo: #2f5fc6;
-    --primary-colorLetra: #2f5fc6;
-    --secondary-colorFondo: #2f5fc6;
-    --secondary-colorLetra: #f2ff00;
-    background: linear-gradient(#2f5fc6, #2f5fc6);
-    --tertiary-colorFondo: #f2ff00;
-    --brightness: #f2ff00;
-    --fondo1: #2f5fc6;
-    --pantalla: #2f5fc6;
-    --fondo2: #2f5fc6;
-    --fondoSemiTrasnpartente:#2f5fc630;
-
-}
-
-#NoAnimation:checked~#envoltura h1 {
-    background-image: linear-gradient(to right, #f2ff00 0%, #f2ff00 50%);
-}
-
-#NoAnimation:checked~#envoltura #skills,
-#NoAnimation:checked~#envoltura .Fondo {
-    
-    background: linear-gradient(#010101, #010101);
-}
-
-
-#NoAnimation:checked~#envoltura #about_me,
-#NoAnimation:checked~#envoltura .nombre {
-        background-image: url(none);
-    background-position: 0 -100px;
-
-}
-
 /* TEMA BASE */
 
 #TemaDefecto:checked~#envoltura .nombre {
@@ -516,7 +468,7 @@ input[type="checkbox"]:checked+.checkbox-custom {
 .correoEn:hover:focus,
 .correoEn:hover {
     color: var(--secondary-colorLetra);
-    background-color: rgba(7, 108, 22, 0.18);
+    background-color: rgba(7, 78, 108, 0.18);
     transform: rotateX(350deg) rotate(-3deg);
 }
 
@@ -585,22 +537,6 @@ input[type="checkbox"]:checked+.checkbox-custom {
  
 }
 
-
-
-
-
-
-
-#NoAnimation:checked~#envoltura .Disponibilidad,
-#NoAnimation:checked~#envoltura .Skill,
-#NoAnimation:checked~#envoltura .ContenedordelContenedorHs,
-#NoAnimation:checked~#envoltura .contenedorH2,
-#NoAnimation:checked~#envoltura .pieza:active {
-
- animation: none;
-
-}
-
 /* CAMBIANDO H1*/
 
 h1 {
@@ -610,7 +546,7 @@ h1 {
     margin-left: 50px;
     margin-bottom: 0;
     max-width: 40%;
-    background-image: linear-gradient(to right, rgb(3, 169, 94) 0%, white 50%);
+    background-image: linear-gradient(to right, rgb(3, 122, 169) 0%, white 50%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -627,7 +563,7 @@ h1 {
 .nombre{
     background-color: var(--secondary-colorFondo);
     opacity: 0.8;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000cc 10px), repeating-linear-gradient(#197e4d, #0a0a0a);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000cc 10px), repeating-linear-gradient(#19727e, #0a0a0a);
     position: relative;
     padding: 20px 0 10px 0;
     padding-bottom: 60px;
@@ -940,7 +876,7 @@ h1 {
     margin-left: -30px;
     max-height: 550px;
     padding: 20px;
-    background: linear-gradient(rgb(27, 83, 49), rgb(0, 0, 0));
+    background: linear-gradient(rgb(27, 66, 83), rgb(0, 0, 0));
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
     padding-bottom: 100px;
@@ -949,14 +885,14 @@ h1 {
 }
 
 .ContenedorSkills {
-    background-color: var(--fondo1);
+    background-color: #dfece3;
     color: var(--tertiary-colorFondo);
     padding: 0 50px;
     width: 100%;
     max-width: 500px;
     margin: 50px auto;
     border-radius: 10px;
-    box-shadow: 0 0px 10px var(--brightness);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.696);
     box-sizing: border-box;
     overflow: hidden;
     transform: translateY(-520px);
@@ -1163,9 +1099,6 @@ h1 {
     .hola {
         top: 550px;
     }
-
-
-
 }
 
 /*ABOUT ME*/
@@ -1185,36 +1118,6 @@ h1 {
 .contenedorAbouth2 {
     opacity: 0;
     margin-top: 0;
-}
-
-.Abouth2{
-    position: absolute;
-    transform: translateX(300px) translateY(-80px);
-    color: var(--primary-colorLetra);
-
-}
-
-
-.Abouth2::after{
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-image: url(Imagenes/CapturaAbout.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-
-}
-
-.Abouth2:hover::after {
-
-   display: block;
-  transform: translateX(110px) translateY(-210px);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 0 100%, 20% 75%, 0% 75%);
-
-
 }
 
 
@@ -1300,7 +1203,7 @@ h1 {
 .pieza img {
     height: 150px;
     width: 250px;
-    background-color: rgb(34, 170, 68);
+    background-color: rgb(34, 156, 170);
     margin: 10px;
     font-size: 2.5rem;
     border-radius: 20%;
@@ -1413,10 +1316,12 @@ h1 {
 
 .Fondo{
     position: relative;
-    background: linear-gradient(rgb(18, 53, 32), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgb(18, 51, 53), rgba(0, 0, 0, 0));
     height: 700px;
     padding: 20px;
     margin: 0 100px;
+
+ 
 }
 
 .FondoFormulario {
@@ -1429,6 +1334,7 @@ h1 {
     border-radius: 10px;
     margin-top: 80px;
     border: 2px solid var(--tertiary-colorFondo);
+   
     
 }
 
