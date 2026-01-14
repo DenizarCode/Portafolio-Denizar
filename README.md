@@ -1,18 +1,14 @@
 ## Estado del proyecto
-
-- El proyecto en si es una practica para poder aprender sobre json, tcp e hilos, asi mismo como practicar un poco mas lo que es la integracion de SQL.
-Utilice una variable para probar todo, desde cliente servidor a servidor cliente, esto con el motivo de agilizar el proceso de creacion y practica,
-el proyecto sirve por completo. Al pasar el tiempo, vi el proyecto muy bonito y completo, decidiendo asi subirlo a github y tener un control de 
-versiones, esto con el fin de mejorarlo en todo sentido y hacer que sea un proyecto completo y funcional.
+- El portafolio esta casi al 100% terminado, pero faltan varias cosas por pulir agregar y cambiar, lo subi por cuestiones de emocion y tiempo, es un
+trabajo realizado con mucho cariño y esfuerzo que a pesar de no estar terminado, cuide mucho las buenas practicas, el SEO, la accesibilidad y el performance, estudiando incluso la teoria del color, incluyendo la traduccion de ingles y un tema para el daltonismo, asi mismo como divertirme agregando varios temas, el portafolio esta creado
+100 por 100 desde 100, solo y unicamente con HTML y CSS.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Futuros ajustes
 
-- Verificar que todo el programa funcione sin caidas.
-- Modificar la interfaz del usuario.
-- Agregar control de excepciones mas avanzadas.
-- Mantener una mejor y mayor documentancion.
-- Refactorizar las variables para mejor claridad y funcionalidad.
-- Utilizar mas variables para mas control.
-- Optimizacion y escabilidad 
+- Cambiar y agregar imagenes y texto faltante en varias partes.
+- Corregir, ajustar y agregar mayor detalle en la seccion mas sobre mi.
+- Agregar link de GitHub a los proyectos. 
+- Verificar el apartado de contacto y hacerlo funcional. (Planes futuros).
+- Agregar JavaScript. (Planes futuros)  
 ...
 ---------------------------------------------------------------------------------------------------------------------------------------------------
