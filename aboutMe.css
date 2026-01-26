@@ -480,8 +480,9 @@ input[type="checkbox"]:checked+.checkbox-custom {
 
 
 .AboutMe{
- grid-area: AboutMe;
-     border: 2px solid var(--secondary-colorFondo);
+    grid-area: AboutMe;
+    border: 2px solid var(--secondary-colorFondo);
+ 
  
 }
 
@@ -491,5 +492,11 @@ input[type="checkbox"]:checked+.checkbox-custom {
     height: 200px;
     border: 20px;
      
+}
+
+
+.descripcion{
+
+       padding-left: 10px;
 }
 
