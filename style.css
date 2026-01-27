@@ -23,7 +23,7 @@
 
 html {
     width: 100%;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     scrollbar-color: #4CAF50 #383838;
 }
 
@@ -1338,7 +1338,14 @@ h1 {
     opacity: 100%;
     transition: opacity 2s ease;
     font-size: 0.625rem;
+
 }
+
+.pieza:hover .hoa {
+    color: var(--secondary-colorLetra);
+
+}
+
 
 .pieza:active {
     z-index: 10;
@@ -1378,6 +1385,8 @@ h1 {
     font-weight: 600;
 
 }
+
+
 
 .ImagenTitulos{
     width: 100%;

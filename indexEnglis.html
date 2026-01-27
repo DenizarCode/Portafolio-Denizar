@@ -14,6 +14,7 @@
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"  crossorigin="anonymous" />
         <link rel="stylesheet" href="style copy.css">
     </head>
+    
         
     <!-- EMPIEZA EL BODY -->
         
@@ -30,19 +31,20 @@
             <!-- HEADER-->
             
             <input type="checkbox" id="toggleBotones" checked title="botonActivo" > 
-            <label for="toggleBotones" class="checkbox-custom" tabindex="0"> <i class="fa-solid fa-brush"></i> </label>
+            <label for="toggleBotones" class="checkbox-custom" tabindex="0"> <i class="fa-solid fa-gear"></i> </label>
             <a href="#home" title="botonTema"></a>
             <div class="parpadeo" title="decoracion del boton home"></div>
 
             <div class="pruebe"></div>
             <div class="grupo-botones">
-                <h2 class="configuracion"> <i class="fa-solid fa-gears"></i> Configuracion</h2>
+                <h2 class="configuracion"> <i class="fa-solid fa-gears"></i> Configuration</h2>
                 <label class="radios" for="TemaNocturno"> <i class="fas fa-moon"></i> </label>
                 <label class="radios" for="TemaClaro"> <i class="fas fa-sun"></i> </label>
                 <label class="radios" for="TemaTierno"> <i class="fas fa-cat"></i></label>
                 <a href="#home " class="radios radiohome" alt="Boton Cambiar Tema" title="Cambiar Tema"> <i class="fa-solid fa-arrow-up"></i> </a>
                 <label class="radios" for="TemaDefecto"> <i class="fa-solid fa-tree"></i> </label>
                 <a href="index.html" class="radios" for="language"> <i class="fa-solid fa-language"> Es</i> </a>
+                <label class="radios" for="NoAnimation"> <i class="fa-solid fa-scale-balanced"></i> Daltonismo </label>
 
             </div>
             
@@ -60,7 +62,7 @@
                         <li class="nav__item"> <a href="#home" class="nav__link link--Home"> Home </a> </li>
                         <li class="nav__item"> <a href="#projects" class="nav__link "> Projects </a> </li>
                         <li class="nav__item"> <a href="#skills" class="nav__link">Skills </a> </li>
-                        <li class="nav__item"> <a href="#about_me" class="nav__link">About me </a> </li>
+                        <li class="nav__item"> <a href="#about_me" class="nav__link">About me  </a> </li>
                         <li class="nav__item"> <a href="#Contact" class="nav__link">Contact </a> </li>
                     </ul>
                 </div>
@@ -77,7 +79,7 @@
                 <div class="nombre">            
                     <h1> Marvin Denizar Ramirez Montes</h1>
                     <h2 class="Disponibilidad">Currently available</h2>
-                    <a href="CurriculoPrueba.pdf" download class="boton-descarga" title="Descargar Curriculo"> <i
+                    <a href="Curriculo-Marvin-Denizar-Ramírez-Montes.pdf" download class="boton-descarga" title="Descargar Curriculo"> <i
                     class="fa fa-file-text"></i> - Download CV <i class="fa fa-download"></i> </a>
                     <p class="clase">Junior developer passionate about detail and style</p>
                        
@@ -109,7 +111,7 @@
                         <div class="ContenedorDescripcion">          
                             <h2 class="Titulote"> Portfolio</h2>  
                             <p class="descripcion"> 
-                               Current project, created only with the following technologies. 
+                               Current project, created only with the following technologies.  
                             </p>
                             <div class="tecnologias ">
                                 <i class="devicon-css3-plain-wordmark"></i>
@@ -124,7 +126,7 @@
                         <img src="Imagenes/portada2Portafolio.png" alt="Logo Java" title="Java" class="imgPortafolio">
             
                         <div class="ContenedorDescripcion">
-                            <h2 class="Titulote">Game Store Application</h2>
+                            <h2 class="Titulote"> Game Store Application</h2>
                             <p class="descripcion">Client/Server Project, which used JSON <br>and TCP, linked to a database, created <br>only with the following technologies. 
                             </p>
                             <div class="tecnologias ">          
@@ -140,7 +142,7 @@
                         <img src="Imagenes/kirby.png" alt="Logo Java" title="Java" class="imgPortafolio">
             
                         <div class="ContenedorDescripcion">
-                            <h2 class="Titulote">Coming soon </h2>
+                            <h2 class="Titulote"> Coming soon</h2>
                             <p class="descripcion">Work in progress with Java and some other technologies such as the load container better known as Docker. Possibly using frameworks like Play with Java or .NET with C#.
                             </p>
             
@@ -173,7 +175,7 @@
             
                 <div class="ContenedordelContenedorHs">
                     <div class="contenedorH">
-                        <h2 class="blandSkill"> Continuous learning </h2>
+                         <h2 class="blandSkill"> Continuous learning </h2>
                         <h2 class="blandSkill"> Responsibility</h2>
                         <h2 class="blandSkill"> Work under pressure</h2>
                         <h2 class="blandSkill"> Self-taught</h2>
@@ -188,7 +190,7 @@
                 </div>
             
                 <div class="ContenedorSkills">
-                    <h3> I currently have knowledge in: </h3>
+                    <h3> I currently have knowledge in:</h3>
 
                     <div class="cajitaSkills">
                         <div class="Skill"> 
@@ -237,7 +239,13 @@
                     <h2 class="contenedorAbouth2"> About me: </h2>
                     <p>Hello, it is a pleasure that you can see my portfolio. Thank you for giving me your feedback and any suggestion or help is welcome, and I would really appreciate it. Currently, I have a diploma in computer science and I am self-studying because I am very interested in learning more every day and gaining a vast knowledge of the field. I really like details in my work and I prioritize good presentation, making it as legible and understandable as possible, as well as having a very good style and functionality.
                     </p>
+                    
+                     <div> 
+                        <a  class="Abouth2" href="aboutMe.html">More about me...</a>
+                
+                    </div>
                 </div>
+               
             </section>
             
             <section id="logros">
@@ -245,49 +253,40 @@
                     
                 <div class="zona-galeria">
 
-                    <!--<fieldset class="fieldset_Titulos">  -->
-                        <legend></legend>
-
                         <div class="pieza pieza1">
-                            <div class="hoa"> Agost 21, 2025</div>
-                            <img src="Imagenes/TituloPrueba.png" alt="Imagen 1">
+                            <div class="hoa"> December 2025. Introduction to Cybersecurity</div>
+                            <img src="Imagenes/Certificacion-Klab-ciberseguridad.png" class="ImagenTitulos"  alt="Imagen 1">
                             
                             <p class="detallesIMG">    
-                                <span class="TituloLogro"> Diploma in Computer Science </span> Titulo
-                       Received on August 2025. National University of Distance Education (UNED)
+                                <span class="TituloLogro"> Certificate in Introduction to Cybersecurity </span> Title received in January 2026. Costa Rica Institute of Technology, developed within the framework of the “K-Lab Costa Rica Project” and led by Professor Kyung-Ho Lee.
                             </p>
                         </div>
 
                         <div class="pieza pieza2">       
-                            <div class="hoa">2023</div>            
-                            <img src="Imagenes/TituloPrueba.png" alt="Imagen 2">
+                            <div class="hoa">August 2025. Diploma in Computer Science </div>            
+                            <img src="Imagenes/Diploma-UNED.jpeg"  class="ImagenTitulos" alt="Imagen 2">
                                 
-                            <p class="detallesIMG"> <span class="TituloLogro"> Diploma in Computer Science </span> Titulo         
-                       Received on August 2025. National University of Distance Education (UNED)   
+                            <p class="detallesIMG"> <span class="TituloLogro"> Diploma in Computer Science </span> Title received on August 2025. National Distance Education University (UNED) 
                             </p>
                         </div>
 
                         <div class="pieza pieza3">   
-                            <div class="hoa">2022</div> 
-                            <img src="Imagenes/TituloPrueba.png" alt="Imagen 3">
+                            <div class="hoa">May 2021. Excel</div> 
+                            <img src="Imagenes/Certificacion-Excel-Intermedio.jpeg" class="ImagenTitulos" alt="Imagen 3">
 
                             <div class="detallesIMG">           
-                                <span class="TituloLogro"> Diploma in Computer Science </span> Titulo
-                       Received on August 2025. National University of Distance Education (UNED)   
+                                <span class="TituloLogro"> Excel Certificate </span> Certificate received in May 2021. Lodeco Academy
                             </div>      
                         </div>
 
                         <div class="pieza pieza4">
-                            <div class="hoa">2022</div>      
-                            <img src="Imagenes/TituloPrueba.png" alt="Imagen 4">       
+                            <div class="hoa">February 2021. Word</div>      
+                            <img src="Imagenes/Certificacion-Word.jpeg"  class="ImagenTitulos" alt="Imagen 4">       
                             <p class="detallesIMG"> 
-                                <span class="TituloLogro"> Diploma in Computer Science </span> Titulo
-                       Received on August 2025. National University of Distance Education (UNED) 
+                                <span class="TituloLogro">Certificate in Word </span> Certificate received in February 2021. Lodeco Academy
                             </p>
                         </div>
 
-
-                    <!-- </fieldset> -->
                 </div>
             </section>
             
@@ -298,26 +297,25 @@
                 <div id="Contact"></div>
             
                 <form class="FondoFormulario">
-                    <h2 class="titulo_Formulario">Formulario de interes</h2>
+                    <h2 class="titulo_Formulario">Interest form (does not work)</h2>
             
                     <fieldset class="fieldset_basico">         
-                        <legend>Datos</legend>
+                        <legend>Data</legend>
             
                         <div class="fondoInput">
-                            <label class="label_formulario" for="nombre">Interest form ...</label>
-                            <input class="CambioInput" type="text" placeholder="Ejemplo Denizar" id="nombre">
+                            <label class="label_formulario" for="nombre">Full name</label>
+                            <input class="CambioInput" type="text" placeholder="Denizar Example" id="nombre">
                         </div>
             
                         <div class="fondoInput">
-                            <label for="email" class="label_formulario">Email </label>
-                            <!--label for para ligar al id del input-->
-                            <input class="CambioInput" type="email" placeholder="Ejemplo@gmail.com" id="email">
+                            <label for="email" class="label_formulario">Correo Electronico </label>
+                            <input class="CambioInput" type="email" placeholder="Example@gmail.com" id="email">
                         </div>
                     </fieldset>
 
                     <div class="fondoInput">
                         <label class="label_formulario"> Message
-                            <textarea class="Textarea" placeholder="Deja tu mensaje..."></textarea>
+                            <textarea class="Textarea" placeholder="Leave your message..."></textarea>
                         </label> 
                     </div>
                     
@@ -349,13 +347,13 @@
                         </li>
                         
                         <li class="nav_item"> 
-                            <a href="https://github.com/" crossorigin="anonymous" target="_blank" class="nav_link"> 
+                            <a href="https://github.com/DenizarCode" crossorigin="anonymous" target="_blank" class="nav_link"> 
                                 <i class="fab fa-github"></i> GitHub
                             </a> 
                         </li>
             
                         <li class="nav_item"> 
-                            <a href="CurriculoPrueba.pdf" target="_blank" class="nav_link"> 
+                            <a href="Curriculo-Marvin-Denizar-Ramírez-Montes.pdf" target="_blank" class="nav_link"> 
                                 <i class="fa fa-file-text"></i> Curriculum <i class="fa fa-download"></i>
                             </a> 
                         </li>
