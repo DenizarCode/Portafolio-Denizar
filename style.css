@@ -788,7 +788,7 @@ h1 {
 .project {
     width: 600px;
     min-height: 250px;
-    min-width: 100px;
+    min-width: 210px;
     flex-direction: column;
     align-content: center;
     text-align: center;
@@ -844,13 +844,25 @@ h1 {
 
 }
 
-.tecnologias {
+.tecnologias{
     position: relative;
     margin-top: 30px;
     transform: scale(2.5);
     text-align:center;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.21);
-    width: 20%;
+    width: 25%;
+}
+
+@media  (max-width: 720px) {
+    
+    .tecnologias{
+        position: relative;
+        margin-top: 30px;
+        transform: scale(1.5);
+        text-align:center;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.21);
+        width: 0%;
+    }
 }
 
 .tecnologias2 {
@@ -865,8 +877,6 @@ h1 {
     margin-left: -45px;
     padding: 10px;
     z-index: 1;
- 
-
 }
 
 .imgPortafolio {
