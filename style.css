@@ -802,7 +802,6 @@ h1 {
     overflow: hidden;
     border: 4px solid var(--tertiary-colorFondo);
     
- 
 }
 
 .project:hover {
@@ -872,11 +871,17 @@ h1 {
 .linkGitHub{
     position: absolute;
     text-decoration: none;
-    color: var(--primary-colorLetra);
+    color: var(--primary-colorFondo);
     bottom: 0;
     margin-left: -45px;
     padding: 10px;
-    z-index: 1;
+    z-index: 100;
+  
+}
+
+.linkGitHub:hover{
+    color: var(--tertiary-colorFondo);
+    text-decoration: underline;
 }
 
 .imgPortafolio {
@@ -898,6 +903,8 @@ h1 {
     filter: blur(0px);
     filter: drop-shadow(10px 10px 1px rgba(0, 0, 0, 0.171));
 }
+
+
 
 /*Proximamente */
 
@@ -1261,6 +1268,18 @@ h1 {
   
 }
 
+.TitulosTitle2{
+    position: absolute;
+    width: 100%;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color:var(--primary-colorLetra);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  
+}
+
 #logros {
     width: 100%;
     margin-left: -30px;
@@ -1290,9 +1309,10 @@ h1 {
   content: '';
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 1.5rem;
   bottom: 0;
   width: 2px;
+  height: 90%;
   background-color: var(--brightness);
   transform: translateX(-50%);
   box-shadow: 0 0 20px var(--brightness);
@@ -1546,13 +1566,13 @@ h1 {
     .Deco,
     .Deco2 {
         position: absolute;
-        right: 100px;
+        right: -5px;
         max-width: 60px;
         z-index: 1;
     }
 
     .Deco {
-        left: 100px;
+        left: -5px;
     }
 
     .Deco::after,
