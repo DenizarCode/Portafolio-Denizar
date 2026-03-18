@@ -5,12 +5,12 @@ trabajo realizado con mucho cariño y esfuerzo que a pesar de no estar terminado
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Futuros ajustes: 
 
-- Cambiar y agregar imagenes y texto faltante en varias partes.
 - Verificar el apartado de contacto y hacerlo funcional. (Planes futuros).
 - Agregar JavaScript. (Planes futuros)  
 ...
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Ajustes realizados: 
+- Cambiar y agregar imagenes y texto faltante en varias partes.
 - Agregar link de GitHub a los proyectos.
 - Agrege las imagenes de los titulos.
 - Agrege mayor detalle en la seccion mas sobre mi.
